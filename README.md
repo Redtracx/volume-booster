@@ -39,18 +39,7 @@ und müssen erneut geladen werden.
 
 ### Dauerhafte Installation
 
-Für eine dauerhafte Installation muss die Erweiterung von Mozilla signiert
-werden:
-
-1. Erweiterung als ZIP packen, z. B. mit [`web-ext`](https://github.com/mozilla/web-ext):
-   ```
-   npx web-ext build
-   ```
-2. Das erzeugte Paket über [addons.mozilla.org](https://addons.mozilla.org/developers/)
-   hochladen (als öffentlicher Eintrag oder „Unlisted“ zur Selbstverteilung)
-   und signieren lassen.
-3. Die signierte `.xpi`-Datei in Firefox öffnen bzw. per Drag & Drop in ein
-   Firefox-Fenster ziehen, um sie dauerhaft zu installieren.
+Die Erweiterung ist unter [LINK-SOON] im Mozilla Store zu finden.
 
 ## Nutzung
 
