@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Volume Booster</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <span class="icon" aria-hidden="true">🔊</span>
+        <h1>Volume Booster</h1>
+      </header>
+
+      <p id="unsupported" class="hidden">
+        Diese Seite kann nicht angepasst werden.
+      </p>
+
+      <div id="controls" class="hidden">
+        <div class="value-row">
+          <span id="percentLabel">100%</span>
+          <button id="muteBtn" type="button" title="Stummschalten">🔈</button>
+        </div>
+
+        <input
+          type="range"
+          id="slider"
+          min="0"
+          max="500"
+          step="5"
+          value="100"
+          aria-label="Lautstärke in Prozent"
+        />
+
+        <div class="presets">
+          <button type="button" data-value="100">100%</button>
+          <button type="button" data-value="200">200%</button>
+          <button type="button" data-value="300">300%</button>
+          <button type="button" data-value="500">500%</button>
+        </div>
+
+        <button id="resetBtn" type="button" class="reset">Zurücksetzen</button>
+
+        <hr />
+
+        <label class="switch-row" for="levelingToggle">
+          <span>
+            Lautstärke-Ausgleich
+            <small>Gleicht laute und leise Stellen an (z. B. bei Netflix)</small>
+          </span>
+          <input type="checkbox" id="levelingToggle" />
+        </label>
+
+        <select id="levelingIntensity" disabled>
+          <option value="normal">Normal</option>
+          <option value="stark">Stark</option>
+        </select>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
