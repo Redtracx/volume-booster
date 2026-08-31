@@ -87,3 +87,7 @@ npx web-ext lint
 - Sehr hohe Boost-Werte (z. B. 500%) können bei leisem Ausgangsmaterial zu
   Verzerrungen (Clipping) führen, da echte Lautstärkeverstärkung technisch
   bedingt ist.
+
+## Lizenz
+
+MIT – siehe [LICENSE](LICENSE).
